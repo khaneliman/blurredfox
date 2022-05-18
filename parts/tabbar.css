@@ -187,10 +187,6 @@ hbox.tab-content[pinned=true] .tab-text {
 
 .tabbrowser-tab:hover {
 	box-shadow: 0 1px 4px rgba(0,0,0,.05);
-}
-
-/* Set color scheme */
-.tabbrowser-tab {
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -238,8 +234,3 @@ hbox.tab-content[pinned=true] .tab-text {
 
 /* Why 100vw? Tab closing requires width animation to end and "none" can't be animated */
 .tabbrowser-tab[fadein]:not([style^="max-width"]){ max-width: 100vw !important }
-
-#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
-  /* Add a gap between the last pinned tab and the first visible tab */
-  margin-inline-start: 0px !important; /* .tabbrowser-tab sets margin: 0 !important; */
-}
