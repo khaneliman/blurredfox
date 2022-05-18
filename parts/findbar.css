@@ -7,6 +7,14 @@
 The findbar
 */
 
+/* Move Find Bar above the page*/
+
+.browserContainer > findbar {
+
+-moz-box-ordinal-group: 0;
+
+}
+
 #browser #appcontent #tabbrowser-tabbox findbar,
 #browser #appcontent #tabbrowser-tabbox tabpanels {
 	-moz-appearance: none !important;
