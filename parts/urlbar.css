@@ -42,20 +42,10 @@ URL bar
 /* 	background: #0000003b !important; */
 }
 
-.urlbar-icon:not([disabled]):hover,
-.urlbar-icon-wrapper:not([disabled]):hover {
-}
-
 /* Set color scheme */
 .urlbar-icon:not([disabled]):hover,
-.urlbar-icon-wrapper:not([disabled]):hover,{
+.urlbar-icon-wrapper:not([disabled]):hover{
 	background: var(--bf-hover-bg) !important;
-}
-
-.urlbar-icon[open],
-.urlbar-icon-wrapper[open],
-.urlbar-icon:not([disabled]):hover:active,
-.urlbar-icon-wrapper:hover:active {
 }
 
 /* Set color scheme */
@@ -64,11 +54,6 @@ URL bar
 .urlbar-icon:not([disabled]):hover
 .urlbar-icon-wrapper:hover:active {
 	background: var(--bf-hover-bg) !important;
-}
-
-.urlbar-icon-wrapper[open] > .urlbar-icon,
-.urlbar-icon-wrapper > .urlbar-icon:hover,
-.urlbar-icon-wrapper > .urlbar-icon:hover:active {
 }
 
 /* Set color scheme */
@@ -84,16 +69,10 @@ URL bar
 	-moz-appearance: var(--bf-moz-appearance) !important;
 }
 
-#urlbar[open="true"] > #urlbar-background {
-}
-
 /* Set color scheme */
 #urlbar[open="true"] > #urlbar-background {
 	background: var(--bf-urlbar-active-bg) !important;
 	backdrop-filter: blur(var(--bf-backdrop-blur)) !important;
-}
-
-.urlbar-icon {
 }
 
 /* Set color scheme */
@@ -155,16 +134,9 @@ URL bar
 #star-button {
 }
 
-#star-button:hover:not(.no-hover):not([open=true]) {
-}
-
 /* Set color scheme */
 #star-button:hover:not(.no-hover):not([open=true]) {
 	background: var(--bf-hover-bg) !important;
-}
-
-#star-button:hover:active:not(.no-hover),
-#star-button[open=true] {
 }
 
 /* Set color scheme */
@@ -186,18 +158,8 @@ URL bar
 }
 
 #identity-box:hover:not(.no-hover):not([open=true]),
-#tracking-protection-icon-container:hover:not(.no-hover):not([open=true]) {
-}
-
-#identity-box:hover:not(.no-hover):not([open=true]),
 #tracking-protection-icon-container:hover:not(.no-hover):not([open=true]){
 	background: var(--bf-hover-bg) !important;
-}
-
-#identity-box:hover:active:not(.no-hover),
-#identity-box[open=true],
-#tracking-protection-icon-container:hover:active:not(.no-hover),
-#tracking-protection-icon-container[open=true] {
 }
 
 #identity-box:hover:active:not(.no-hover),
