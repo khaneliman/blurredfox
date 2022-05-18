@@ -8,10 +8,6 @@ The customization window
 */
 
 #customization-container {
-}
-
-#customization-container:-moz-lwtheme-darktext,
-#customization-container:-moz-lwtheme-brighttext {
 	background: var(--bf-bg) !important;
 }
 
@@ -20,8 +16,7 @@ The customization window
 	border-radius: 6px !important;
 }
 
-.customizationmode-button:-moz-lwtheme-darktext,
-.customizationmode-button:-moz-lwtheme-brighttext {
+.customizationmode-button {
 	color: var(--bf-color) !important;;
 }
 

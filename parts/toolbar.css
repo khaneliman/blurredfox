@@ -7,11 +7,9 @@ Contains navbar, urlbar, and etc.
 */
 
 .browser-toolbar {
-}
-
-.browser-toolbar:-moz-lwtheme-darktext,
-.browser-toolbar:-moz-lwtheme-brighttext {
 	background: var(--bf-tab-toolbar-bg) !important;
+/* 	background: var(--bf-navbar-bg) !important; */
+/* 	background: #0b0a0a57 !important; */
 }
 
 toolbar {
@@ -27,8 +25,7 @@ toolbar#nav-bar {
 }
 
 /* Set color schemes for #nav-bar */
-toolbar#nav-bar:-moz-lwtheme-darktext,
-toolbar#nav-bar:-moz-lwtheme-brighttext {
+toolbar#nav-bar {
 	background: var(--bf-navbar-bg) !important;
 }
 
@@ -37,23 +34,15 @@ toolbarbutton {
 	margin-left: 2px !important;
 }
 
-.toolbarbutton-1 {
-}
-
 /* Set color schemes for #nav-bar */
-.toolbarbutton-1:-moz-lwtheme-darktext,
-.toolbarbutton-1:-moz-lwtheme-brighttext {
+.toolbarbutton-1 {
 	--toolbarbutton-hover-background: var(--bf-hover-bg) !important;
 	--toolbarbutton-active-background: var(--bf-active-bg) !important;
 }
 
+/* Set color scheme */
 #searchbar {
 	border: none !important;
-}
-
-/* Set color scheme */
-#searchbar:-moz-lwtheme-darktext,
-#searchbar:-moz-lwtheme-brighttext {
 	background: var(--bf-bg) !important;
 }
 
@@ -64,18 +53,16 @@ toolbarbutton {
 #navigator-toolbox,
 toolbaritem {
 	border: none !important;
+	background: transparent !important;
 }
 
 #navigator-toolbox::after {
 	border-bottom: 0 !important;
 }
 
-.toolbarbutton-text {
-}
 
 /* Set color scheme */
-.toolbarbutton-text:-moz-lwtheme-darktext,
-.toolbarbutton-text:-moz-lwtheme-brighttext {
+.toolbarbutton-text {
 	color: var(--bf-icon-color)  !important;
 }
 

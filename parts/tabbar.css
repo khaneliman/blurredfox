@@ -22,8 +22,7 @@ The tabs container
 }
 
 /* Transparent tabs */
-.toolbar-items:-moz-lwtheme-darktext,
-.toolbar-items:-moz-lwtheme-brighttext {
+.toolbar-items {
 	background-color: transparent !important;
 	-moz-appearance: var(--bf-moz-appearance) !important;
 }
@@ -62,8 +61,7 @@ The tabs container
 	border: none !important;
 }
 
-.tab-background:-moz-lwtheme-darktext,
-.tab-background:-moz-lwtheme-brighttext {
+.tab-background {
 	background: transparent !important;
 	-moz-appearance: var(--bf-moz-appearance) !important;
 }
@@ -192,8 +190,7 @@ hbox.tab-content[pinned=true] .tab-text {
 }
 
 /* Set color scheme */
-.tabbrowser-tab:hover:-moz-lwtheme-darktext,
-.tabbrowser-tab:hover:-moz-lwtheme-brighttext {
+.tabbrowser-tab {
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -238,3 +235,11 @@ hbox.tab-content[pinned=true] .tab-text {
   direction: ltr;
 }
 */
+
+/* Why 100vw? Tab closing requires width animation to end and "none" can't be animated */
+.tabbrowser-tab[fadein]:not([style^="max-width"]){ max-width: 100vw !important }
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  /* Add a gap between the last pinned tab and the first visible tab */
+  margin-inline-start: 0px !important; /* .tabbrowser-tab sets margin: 0 !important; */
+}

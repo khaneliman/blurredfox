@@ -26,20 +26,20 @@ URL bar
 }
 
 /* Set color scheme */
-#urlbar-input:focus:-moz-lwtheme-darktext,
-#urlbar-input:focus:-moz-lwtheme-brighttext {
+#urlbar-input {
 	color: var(--bf-urlbar-focused-color) !important;
 }
 
 #urlbar-background {
 	border-radius: var(--bf-urlbar-radius) !important;
-	border: none !important
+	border: none !important;
+/* 	background: #0000003b !important; */
 }
 
 /* Set color scheme */
-#urlbar-background:-moz-lwtheme-darktext,
-#urlbar-background:-moz-lwtheme-brighttext {
+#urlbar-background{
 	background: var(--bf-urlbar-bg) !important;
+/* 	background: #0000003b !important; */
 }
 
 .urlbar-icon:not([disabled]):hover,
@@ -47,10 +47,8 @@ URL bar
 }
 
 /* Set color scheme */
-.urlbar-icon:not([disabled]):hover:-moz-lwtheme-darktext,
-.urlbar-icon:not([disabled]):hover:-moz-lwtheme-brighttext,
-.urlbar-icon-wrapper:not([disabled]):hover:-moz-lwtheme-darktext,
-.urlbar-icon-wrapper:not([disabled]):hover:-moz-lwtheme-brighttext {
+.urlbar-icon:not([disabled]):hover,
+.urlbar-icon-wrapper:not([disabled]):hover,{
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -61,14 +59,10 @@ URL bar
 }
 
 /* Set color scheme */
-.urlbar-icon[open]:-moz-lwtheme-darktext,
-.urlbar-icon[open]:-moz-lwtheme-brighttext,
-.urlbar-icon-wrapper[open]:-moz-lwtheme-darktext,
-.urlbar-icon-wrapper[open]:-moz-lwtheme-brighttext,
-.urlbar-icon:not([disabled]):hover:active:-moz-lwtheme-darktext,
-.urlbar-icon:not([disabled]):hover:active:-moz-lwtheme-brighttext,
-.urlbar-icon-wrapper:hover:active:-moz-lwtheme-darktext,
-.urlbar-icon-wrapper:hover:active:-moz-lwtheme-brighttext {
+.urlbar-icon[open],
+.urlbar-icon-wrapper[open]
+.urlbar-icon:not([disabled]):hover
+.urlbar-icon-wrapper:hover:active {
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -78,12 +72,9 @@ URL bar
 }
 
 /* Set color scheme */
-.urlbar-icon-wrapper[open] > .urlbar-icon:-moz-lwtheme-darktext,
-.urlbar-icon-wrapper[open] > .urlbar-icon:-moz-lwtheme-brighttext,
-.urlbar-icon-wrapper > .urlbar-icon:hover:-moz-lwtheme-darktext,
-.urlbar-icon-wrapper > .urlbar-icon:hover:-moz-lwtheme-brighttext,
-.urlbar-icon-wrapper > .urlbar-icon:hover:active:-moz-lwtheme-darktext,
-.urlbar-icon-wrapper > .urlbar-icon:hover:active:-moz-lwtheme-brighttext{
+.urlbar-icon-wrapper[open] > .urlbar-icon
+.urlbar-icon-wrapper > .urlbar-icon:hover
+.urlbar-icon-wrapper > .urlbar-icon:hover{
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -97,8 +88,7 @@ URL bar
 }
 
 /* Set color scheme */
-#urlbar[open="true"] > #urlbar-background:-moz-lwtheme-darktext,
-#urlbar[open="true"] > #urlbar-background:-moz-lwtheme-brighttext {
+#urlbar[open="true"] > #urlbar-background {
 	background: var(--bf-urlbar-active-bg) !important;
 	backdrop-filter: blur(var(--bf-backdrop-blur)) !important;
 }
@@ -107,8 +97,7 @@ URL bar
 }
 
 /* Set color scheme */
-.urlbar-icon:-moz-lwtheme-darktext,
-.urlbar-icon:-moz-lwtheme-brighttext {
+.urlbar-icon{
 	color: var(--bf-icon-color) !important;
 }
 
@@ -170,8 +159,7 @@ URL bar
 }
 
 /* Set color scheme */
-#star-button:hover:not(.no-hover):not([open=true]):-moz-lwtheme-darktext,
-#star-button:hover:not(.no-hover):not([open=true]):-moz-lwtheme-brighttext {
+#star-button:hover:not(.no-hover):not([open=true]) {
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -180,10 +168,8 @@ URL bar
 }
 
 /* Set color scheme */
-#star-button:hover:active:not(.no-hover):-moz-lwtheme-darktext,
-#star-button:hover:active:not(.no-hover):-moz-lwtheme-brighttext,
-#star-button[open=true]:-moz-lwtheme-darktext,
-#star-button[open=true]:-moz-lwtheme-brighttext {
+#star-button:hover:active:not(.no-hover),
+#star-button[open=true] {
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -203,10 +189,8 @@ URL bar
 #tracking-protection-icon-container:hover:not(.no-hover):not([open=true]) {
 }
 
-#identity-box:hover:not(.no-hover):not([open=true]):-moz-lwtheme-darktext,
-#identity-box:hover:not(.no-hover):not([open=true]):-moz-lwtheme-brighttext,
-#tracking-protection-icon-container:hover:not(.no-hover):not([open=true]):-moz-lwtheme-darktext,
-#tracking-protection-icon-container:hover:not(.no-hover):not([open=true]):-moz-lwtheme-brighttext {
+#identity-box:hover:not(.no-hover):not([open=true]),
+#tracking-protection-icon-container:hover:not(.no-hover):not([open=true]){
 	background: var(--bf-hover-bg) !important;
 }
 
@@ -216,13 +200,9 @@ URL bar
 #tracking-protection-icon-container[open=true] {
 }
 
-#identity-box:hover:active:not(.no-hover):-moz-lwtheme-darktext,
-#identity-box:hover:active:not(.no-hover):-moz-lwtheme-brighttext,
-#identity-box[open=true]:-moz-lwtheme-darktext,
-#identity-box[open=true]:-moz-lwtheme-brighttext,
-#tracking-protection-icon-container:hover:active:not(.no-hover):-moz-lwtheme-darktext,
-#tracking-protection-icon-container:hover:active:not(.no-hover):-moz-lwtheme-brighttext,
-#tracking-protection-icon-container[open=true]:-moz-lwtheme-darktext,
-#tracking-protection-icon-container[open=true]:-moz-lwtheme-brighttext {
+#identity-box:hover:active:not(.no-hover),
+#identity-box[open=true],
+#tracking-protection-icon-container:hover:active:not(.no-hover),
+#tracking-protection-icon-container[open=true] {
 	background: var(--bf-hover-bg) !important;
 }

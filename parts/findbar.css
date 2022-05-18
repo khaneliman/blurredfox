@@ -13,18 +13,15 @@ The findbar
 	border: none !important;
 }
 
-#browser #appcontent #tabbrowser-tabbox findbar:-moz-lwtheme-darktext,
-#browser #appcontent #tabbrowser-tabbox findbar:-moz-lwtheme-brighttext,
-#browser #appcontent #tabbrowser-tabbox tabpanels:-moz-lwtheme-darktext,
-#browser #appcontent #tabbrowser-tabbox tabpanels:-moz-lwtheme-brighttext {
+#browser #appcontent #tabbrowser-tabbox findbar,
+#browser #appcontent #tabbrowser-tabbox tabpanels {
 	background: transparent !important;
 }
 
 #browser #appcontent #tabbrowser-tabbox findbar {
 }
 
-#browser #appcontent #tabbrowser-tabbox findbar:-moz-lwtheme-darktext,
-#browser #appcontent #tabbrowser-tabbox findbar:-moz-lwtheme-brighttext {
+#browser #appcontent #tabbrowser-tabbox findbar {
 	background-color: var(--bf-bg) !important;
 }
 
@@ -37,7 +34,6 @@ The findbar
 #browser #appcontent #tabbrowser-tabbox .findbar-find-fast {
 }
 
-#browser #appcontent #tabbrowser-tabbox .findbar-find-fast:not([status="notfound"]):-moz-lwtheme-darktext,
-#browser #appcontent #tabbrowser-tabbox .findbar-find-fast:not([status="notfound"]):-moz-lwtheme-brighttext {
+#browser #appcontent #tabbrowser-tabbox .findbar-find-fast:not([status="notfound"]){
 	background-color: var(--bf-bg) !important;
 }
