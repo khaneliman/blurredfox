@@ -7,8 +7,8 @@ Contains navbar, urlbar, and etc.
 */
 
 .browser-toolbar {
-	background: var(--bf-tab-toolbar-bg) !important;
-/* 	background: var(--bf-navbar-bg) !important; */
+/* 	background: var(--bf-tab-toolbar-bg) !important; */
+	background: var(--bf-navbar-bg) !important;
 /* 	background: #0b0a0a57 !important; */
 }
 

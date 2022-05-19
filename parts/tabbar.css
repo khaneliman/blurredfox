@@ -11,7 +11,7 @@ The tabs container
 	/*
 	Set the value to 3 to move the tabbar below the navbar
 	*/
-	-moz-box-ordinal-group: 1 !important;
+	-moz-box-ordinal-group: 3 !important;
 }
 
 #titlebar::after {
@@ -54,7 +54,7 @@ The tabs container
 
 	/* Stretch Tabs */
 .tabbrowser-tab[fadein]:not([pinned]) {
-	max-width: none !important;
+	max-width: 100vw !important;
 }
 
 .tab-background {
@@ -231,6 +231,3 @@ hbox.tab-content[pinned=true] .tab-text {
   direction: ltr;
 }
 */
-
-/* Why 100vw? Tab closing requires width animation to end and "none" can't be animated */
-.tabbrowser-tab[fadein]:not([style^="max-width"]){ max-width: 100vw !important }
